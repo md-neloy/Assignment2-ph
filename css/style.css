@@ -22,6 +22,7 @@ ol {
   font-variation-settings: "slnt" 0;
 }
 .cmn_btn {
+  width: 244px;
   padding: 16px 40px;
   border: 1px solid var(--brand_color);
   border-radius: 42px;
@@ -52,16 +53,16 @@ ol {
   font-size: 48px;
   font-weight: 900;
 }
-.cmn_text > p{
+.cmn_text > p {
   color: var(--seconday_color);
-font-family: Inter;
-font-weight: 400;
-margin-top: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  margin-top: 14px;
 }
-.para{
+.para {
   color: var(--seconday_color);
-font-size: 14px;
-font-weight: 400;
+  font-size: 14px;
+  font-weight: 400;
 }
 /* ====== nav part start ========= */
 .menu_barIcon {
@@ -221,84 +222,195 @@ nav > .container ul li a:hover {
 /* ====== banner part end ========= */
 
 /* ====== habbit part start ========= */
-#habbit{
+#habbit {
   padding: 100px 0;
 }
-#habbit>.container .cmn_text>h3{
+#habbit > .container .cmn_text > h3 {
   text-align: center;
 }
-#habbit>.container .cmn_text>p{
+#habbit > .container .cmn_text > p {
   width: 623px;
   margin: 14px auto 0;
   text-align: center;
 }
-#habbit>.container .parent_grid{
+#habbit > .container .parent_grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 58px;
 }
-#habbit>.container .parent_grid>div{
+#habbit > .container .parent_grid > div {
   width: 231px;
   text-align: center;
 }
-#habbit>.container .parent_grid .img{
- width: 180px;
- height: 180px;
- margin: 0 auto;
- border-radius: 50%;
- border: 4px solid rgba(255, 255, 255, 0.1);
- overflow: hidden;
+#habbit > .container .parent_grid .img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
 }
-#habbit>.container .parent_grid h3{
+#habbit > .container .parent_grid h3 {
   color: rgb(255, 255, 255);
-font-family: Inter;
-font-size: 18px;
-font-weight: 600;
-margin-top: 30px;
-margin-bottom: 14px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 14px;
 }
 
 /* ====== habbit part end ========= */
 
 /* ====== run part start ========= */
-#run>.container{
+#run > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:30px 54px;
+  padding: 30px 54px;
   border-radius: 18px;
   background-color: rgb(34, 34, 34);
 }
-#run>.container>.run_text{
+#run > .container > .run_text {
   width: 443px;
 }
-#run>.container>.run_text h3{
+#run > .container > .run_text h3 {
   color: var(--primary_color);
   font-size: 48px;
   font-weight: 900;
 }
-#run>.container>.run_text p{
+#run > .container > .run_text p {
   margin: 14px 0 34px;
 }
-#run>.container .img{
+#run > .container .img {
   width: 366px;
   border-radius: 18px;
   overflow: hidden;
 }
-#run>.container .img img{
+#run > .container .img img {
   width: 100%;
 }
 /* ====== run part end ========= */
 
 /* ====== calculator part start ========= */
-#calculator{
+#calculator {
   padding: 78px 0 88px;
 }
-#calculator>.container{
+#calculator > .container {
   width: 671px;
-  margin:0 auto 88px;
+  margin: 0 auto 88px;
 }
+#calculator > .wrap_container .cmn_text > h3 {
+  font-size: 1.75rem;
+}
+#calculator > .wrap_container > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#calculator > .wrap_container table {
+  margin-top: 52px;
+}
+#calculator > .wrap_container table tr th {
+  padding: 15px 18px;
+  color: var(--primary_color);
+  font-size: 16px;
+  font-weight: 500;
+}
+#calculator > .wrap_container table tr td {
+  padding: 15px 18px;
+  color: var(--seconday_color);
+  font-size: 14px;
+  font-weight: 400;
+}
+#calculator > .wrap_container .grid_parent {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+#calculator > .wrap_container .grid_parent .field {
+  padding: 12px 40px 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  color: var(--seconday_color);
+}
+#calculator > .wrap_container .grid_parent .custom_wrapper {
+  position: relative;
+}
+#calculator > .wrap_container .grid_parent select {
+  width: 100%;
+  appearance: none;
+  color: var(--seconday_color);
+}
+#calculator > .wrap_container .grid_parent option {
+  background: rgb(34, 34, 34);
+}
+#calculator > .wrap_container .grid_parent .field::placeholder {
+  color: var(--seconday_color);
+}
+#calculator > .wrap_container .custom-select-wrapper {
+  position: relative;
+  grid-column: span 2;
+}
+#calculator > .wrap_container .custom-select {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: var(--primary_color);
+}
+
 /* ====== calculator part end ========= */
+
+/* ====== team part start ========= */
+#team > .container .cmn_text h3 {
+  text-align: center;
+}
+#team > .container .cmn_text p {
+  width: 616px;
+  text-align: center;
+  margin: 14px auto 58px;
+}
+#team > .container .grid_parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+#team > .container .grid_parent .field_img img {
+  width: 100%;
+  height: 100%;
+}
+#team > .container .grid_parent .field_img {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+#team > .container .grid_parent .field_img .img_text {
+  position: absolute;
+  left: 13px;
+  bottom: 15px;
+}
+#team > .container .grid_parent .field_img .img_text h3 {
+  color: var(--primary_color);
+  font-size: 20px;
+}
+#team > .container .grid_parent .field_img .img_text p {
+  color: var(--seconday_color);
+  font-size: 14px;
+}
+
+/* ====== team part end ========= */
+
+/* ====== nav part start ========= */
+/* ====== nav part end ========= */
 /* ====== nav part start ========= */
 /* ====== nav part end ========= */
 
@@ -322,9 +434,9 @@ margin-bottom: 14px;
     flex-direction: column;
   }
   .cmn_btn {
-	padding: 16px 20px;
-	font-size: 1rem;
-}
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
   #banner > .container > .bannner_text {
     width: 100%;
   }
@@ -369,8 +481,7 @@ margin-bottom: 14px;
     display: block;
     color: var(--primary_color);
   }
-  
-  
+
   .cmn_text > h3 {
     color: var(--primary_color);
     font-size: 32px;
@@ -380,42 +491,43 @@ margin-bottom: 14px;
 
   /* ======habbit part start===== */
   .cmn_text > h3 {
-	font-size: 32px;
-}
-#habbit > .container .cmn_text > p {
-	width: 100%;
-}
-#habbit > .container .parent_grid {
-	grid-template-columns: repeat(1,1fr);
-  gap:40px;
-}
-#habbit > .container .parent_grid > div {
-	width: 231px;
-  margin: 0 auto;
-}
+    font-size: 32px;
+  }
+  #habbit > .container .cmn_text > p {
+    width: 100%;
+  }
+  #habbit > .container .parent_grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+  #habbit > .container .parent_grid > div {
+    width: 231px;
+    margin: 0 auto;
+  }
   /* ======habbit part end===== */
 
   /* ======run part start===== */
   #run > .container {
-	flex-direction: column;
-}
-#run > .container > .run_text {
-	width: 100%;
-}
-#run > .container > .run_text h3 {
-	font-size: 32px;
-}
-#run > .container .img {
-	width: 100%;
-}
-#run .cmn_btn {
-  width: 100%;
-  margin-bottom: 38px;
-}
+    flex-direction: column;
+  }
+  #run > .container > .run_text {
+    width: 100%;
+  }
+  #run > .container > .run_text h3 {
+    font-size: 32px;
+  }
+  #run > .container .img {
+    width: 100%;
+  }
+  #run .cmn_btn {
+    width: 100%;
+    margin-bottom: 38px;
+  }
   /* ======run part end===== */
   #calculator > .container {
-	width: 65%;
-}
+    width: 65%;
+  }
+
   /* ======calculator part start===== */
 
   /* ======calculator part end===== */

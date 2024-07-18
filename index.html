@@ -129,17 +129,115 @@
             <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
           </div>
         </div>
-        <div style="background: rgb(34, 34, 34); padding: 52px 0;">
+        <div class="wrap_container" style="background: rgb(34, 34, 34); padding: 52px 0;">
           <div class="container">
             <div class="chart">
               <div class="cmn_text">
                 <h3>BMI Calculator Chart</h3>
               </div>
+              <table cellspacing ="0" border="1px solid rgba(255,255,255,10%)" width="310px" height="216px">
+                <tr>
+                  <th style="text-align: start;">BMI</th>
+                  <th style="text-align: start;">Weight Status</th>
+                </tr>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5 - 24.9</td>
+                  <td>Healthy</td>
+                </tr>
+                <tr>
+                  <td>25.0 - 29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30.0 - and Above</td>
+                  <td>Obese</td>
+                </tr>
+              </table>
             </div>
             <div class="bmi">
               <div class="cmn_text">
                 <h3>Calculate your BMI</h3>
                 <p class="para">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                <form action="#" class="grid_parent">
+                  <input type="text" placeholder="Height/cm" class="field">
+                  <input type="text" placeholder="Weight/kg" class="field">
+                  <input type="number" placeholder="Age" max="80" class="field">
+                  <div class="custom_wrapper">
+                    <select name="" id="" class="field custom_gender">
+                      <option value="#">Sex</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="transinder">Transinder</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down custom-select"></i>
+                  </div>
+                  <div class="custom-select-wrapper">
+                    <select name="" id="activity" class="field">
+                      <option value="#">Select an activity factor</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="green">Green</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down custom-select"></i>
+                  </div>
+                </form>
+                <button class="cmn_btn">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team">
+        <div class="container">
+          <div class="cmn_text">
+            <h3>Meet Our Team</h3>
+            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            <div class="grid_parent">
+              <div class="field_img">
+                <img src="images/trainer1.png" alt="trainer1">
+                <div class="img_text">
+                  <h3>Jerome Bell</h3>
+                  <p>trainer</p>
+                </div>
+              </div>
+              <div class="field_img">
+                <img src="images/trainer2.png" alt="trainer2">
+                <div class="img_text">
+                  <h3>Cameron Williamson</h3>
+                  <p>trainer</p>
+                </div>
+              </div>
+              <div class="field_img">
+                <img src="images/trainer3.png" alt="trainer3">
+                <div class="img_text">
+                  <h3>Darrell Steward</h3>
+                  <p>trainer</p>
+                </div>
+              </div>
+              <div class="field_img">
+                <img src="images/trainer4.png" alt="trainer4">
+                <div class="img_text">
+                  <h3>Dianne Russell</h3>
+                  <p>trainer</p>
+                </div>
+              </div>
+              <div class="field_img">
+                <img src="images/trainer5.png" alt="trainer5">
+                <div class="img_text">
+                  <h3>Cody Fisher</h3>
+                  <p>trainer</p>
+                </div>
+              </div>
+              <div class="field_img">
+                <img src="images/trainer6.png" alt="trainer6">
+                <div class="img_text">
+                  <h3>Theresa Webb</h3>
+                  <p>Trainer</p>
+                </div>
               </div>
             </div>
           </div>
