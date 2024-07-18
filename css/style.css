@@ -15,6 +15,9 @@ ol {
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 /* ====== share style ====== */
+body{
+  background-color: black;
+}
 .inter-normal {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -95,6 +98,7 @@ nav > .container h3 {
   color: var(--brand_color);
   font-size: 36px;
   font-weight: 800;
+  font-style: italic;
 }
 nav > .container ul li a {
   padding: 12px 24px;
@@ -409,12 +413,340 @@ nav > .container ul li a:hover {
 
 /* ====== team part end ========= */
 
-/* ====== nav part start ========= */
-/* ====== nav part end ========= */
+/* ====== footer part start ========= */
+footer{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding:66px 0 35px;
+}
+footer>.container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer>.container>.text_div{
+  width: 443px;
+}
+footer>.container>.text_div h3{
+ color: var(--brand_color);
+ font-weight: 800;
+ font-size: 70px;
+ font-style: italic;
+ margin-bottom: 20px;
+}
+footer>.container ul li{
+  color:var(--primary_color);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+footer>.container ul li:first-child{
+  margin-bottom: 39px;
+}
+footer>.container ul li a{
+  color:var(--seconday_color);
+  font-size: 23px;
+  font-weight: 400;
+}
+/* ====== footer part end ========= */
+
 /* ====== nav part start ========= */
 /* ====== nav part end ========= */
 
 /* media query start from here */
+@media screen and (min-width: 797px) and (max-width:1220px) {
+/* share style */
+  .container {
+    width: 65%;
+  }
+  /* ======nav part start===== */
+  nav > .container ul {
+	gap: 24px;
+}
+  /* ======nav part end===== */
+
+  /* ======banner part start===== */
+  #banner > .container {
+    flex-direction: column;
+  }
+  .cmn_btn {
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+  #banner > .container > .bannner_text {
+    width: 100%;
+  }
+  #banner > .container > .bannner_text h1 {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+  #banner > .container > .bannner_text h1 > span {
+    font-size: 72px;
+  }
+  .cmnt_btn {
+    padding: 16px 20px;
+    font-size: 15px;
+  }
+  .box_txt1 {
+    position: absolute;
+    width: 145px;
+    height: 74px;
+    left: 54%;
+    top: 20px;
+  }
+  .box_txt2 {
+    width: 155px;
+    height: 73px;
+    bottom: 42%;
+    left: 0%;
+  }
+  .box_txt1 h3 {
+    font-size: 30px;
+  }
+  .box_txt1 p {
+    font-size: 10px;
+  }
+  .box_txt2 h3 {
+    font-size: 18px;
+  }
+  .box_txt2 p {
+    font-size: 12px;
+  }
+  .box_txt2 > .circle i {
+    display: block;
+    color: var(--primary_color);
+  }
+
+  .cmn_text > h3 {
+    color: var(--primary_color);
+    font-size: 32px;
+    font-weight: 900;
+  }
+  /* ======banner part end===== */
+  /* ======habbit part start===== */
+  .cmn_text > h3 {
+    font-size: 32px;
+  }
+  #habbit > .container .cmn_text > p {
+    width: 100%;
+  }
+  #habbit > .container .parent_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  #habbit > .container .parent_grid > div {
+    width: 231px;
+    margin: 0 auto;
+  }
+  /* ======habbit part end===== */
+  /* ======run part start===== */
+  #run > .container {
+    gap:30px;
+    align-items: stretch;
+  }
+  #run > .container > .run_text {
+    width: 100%;
+  }
+  #run > .container > .run_text h3 {
+    font-size: 32px;
+  }
+  #run > .container .img {
+    width: 100%;
+  }
+  #run > .container .img img{
+    height: 100%;
+  }
+  #run .cmn_btn {
+    width: 100%;
+  }
+  /* ======run part end===== */
+
+  /* ======calculator part start===== */
+  #calculator > .container {
+    width: 65%;
+  }
+  #calculator > .wrap_container > .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  #calculator > .wrap_container .bmi {
+	width: 100%;
+  margin-top: 42px;
+}
+#calculator > .wrap_container .grid_parent .field {
+	width: 100%;
+}
+  /* ======calculator part end===== */
+
+  /* ======team part start===== */
+  #team > .container .cmn_text > p {
+	width: 100%;
+}
+  #team > .container .grid_parent {
+  margin-bottom: 30px;
+}
+  /* ======team part end===== */
+  /* ======= footer part start ======== */
+ footer > .container {
+	grid-template-columns: repeat(2,1fr);
+}
+footer > .container > .text_div {
+	width: 100%;
+  margin-bottom: 20px;
+  grid-column: span 2;
+}
+  /* ======= footer part end ======== */
+}
+@media screen and (min-width: 577px) and (max-width:796px) {
+   /* share style */
+  .container {
+    width: 65%;
+  }
+  /* ======nav part start===== */
+  .menu_barIcon {
+    display: block;
+  }
+  nav > .container ul {
+    display: none;
+  }
+  /* ======nav part end===== */
+
+  /* ======banner part start===== */
+  #banner > .container {
+    flex-direction: column;
+  }
+  .cmn_btn {
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+  #banner > .container > .bannner_text {
+    width: 100%;
+  }
+  #banner > .container > .bannner_text h1 {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+  #banner > .container > .bannner_text h1 > span {
+    font-size: 72px;
+  }
+  .cmnt_btn {
+    padding: 16px 20px;
+    font-size: 15px;
+  }
+  .box_txt1 {
+    position: absolute;
+    width: 145px;
+    height: 74px;
+    left: 54%;
+    top: 20px;
+  }
+  .box_txt2 {
+    width: 155px;
+    height: 73px;
+    bottom: 42%;
+    left: 0%;
+  }
+  .box_txt1 h3 {
+    font-size: 30px;
+  }
+  .box_txt1 p {
+    font-size: 10px;
+  }
+  .box_txt2 h3 {
+    font-size: 18px;
+  }
+  .box_txt2 p {
+    font-size: 12px;
+  }
+  .box_txt2 > .circle i {
+    display: block;
+    color: var(--primary_color);
+  }
+
+  .cmn_text > h3 {
+    color: var(--primary_color);
+    font-size: 32px;
+    font-weight: 900;
+  }
+  /* ======banner part end===== */
+  /* ======habbit part start===== */
+  .cmn_text > h3 {
+    font-size: 32px;
+  }
+  #habbit > .container .cmn_text > p {
+    width: 100%;
+  }
+  #habbit > .container .parent_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  #habbit > .container .parent_grid > div {
+    width: 231px;
+    margin: 0 auto;
+  }
+  /* ======habbit part end===== */
+  /* ======run part start===== */
+  #run > .container {
+    flex-direction: column;
+  }
+  #run > .container > .run_text {
+    width: 100%;
+  }
+  #run > .container > .run_text h3 {
+    font-size: 32px;
+  }
+  #run > .container .img {
+    width: 100%;
+  }
+  #run > .container .img img{
+    height: 100%;
+  }
+  #run .cmn_btn {
+    width: 100%;
+    margin-bottom: 38px;
+  }
+  /* ======run part end===== */
+
+  /* ======calculator part start===== */
+  #calculator > .container {
+    width: 65%;
+  }
+  #calculator > .wrap_container > .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  #calculator > .wrap_container .bmi {
+	width: 100%;
+  margin-top: 42px;
+}
+#calculator > .wrap_container .grid_parent .field {
+	width: 100%;
+}
+  /* ======calculator part end===== */
+
+  /* ======team part start===== */
+  #team > .container .cmn_text > p {
+	width: 100%;
+}
+  #team > .container .grid_parent {
+	grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+}
+  /* ======team part end===== */
+  /* ======= footer part start ======== */
+ footer > .container {
+	grid-template-columns: repeat(2,1fr);
+}
+footer > .container > .text_div {
+	width: 100%;
+  margin-bottom: 20px;
+  grid-column: span 2;
+}
+  /* ======= footer part end ======== */
+}
 @media screen and (max-width: 576px) {
   /* share style */
   .container {
@@ -531,6 +863,7 @@ nav > .container ul li a:hover {
   }
   #calculator > .wrap_container > .container {
     flex-direction: column;
+    align-items: start;
   }
   #calculator > .wrap_container .bmi {
 	width: 100%;
@@ -546,6 +879,16 @@ nav > .container ul li a:hover {
 }
   #team > .container .grid_parent {
 	grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 30px;
 }
   /* ======team part end===== */
+  /* ======= footer part start ======== */
+footer > .container {
+	grid-template-columns: repeat(1,1fr);
+}
+footer > .container > .text_div {
+	width: 100%;
+  margin-bottom: 20px;
+}
+  /* ======= footer part end ======== */
 }
