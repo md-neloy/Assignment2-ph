@@ -371,7 +371,7 @@ nav > .container ul li a:hover {
 #team > .container .cmn_text h3 {
   text-align: center;
 }
-#team > .container .cmn_text p {
+#team > .container .cmn_text>p {
   width: 616px;
   text-align: center;
   margin: 14px auto 58px;
@@ -524,13 +524,28 @@ nav > .container ul li a:hover {
     margin-bottom: 38px;
   }
   /* ======run part end===== */
+  
+  /* ======calculator part start===== */
   #calculator > .container {
     width: 65%;
   }
-
-  /* ======calculator part start===== */
-
+  #calculator > .wrap_container > .container {
+    flex-direction: column;
+  }
+  #calculator > .wrap_container .bmi {
+	width: 100%;
+  margin-top: 42px;
+}
+#calculator > .wrap_container .grid_parent .field {
+	width: 100%;
+}
   /* ======calculator part end===== */
-  /* ======banner part start===== */
-  /* ======banner part end===== */
+  /* ======team part start===== */
+  #team > .container .cmn_text > p {
+	width: 100%;
+}
+  #team > .container .grid_parent {
+	grid-template-columns: repeat(1, 1fr);
+}
+  /* ======team part end===== */
 }
