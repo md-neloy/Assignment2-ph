@@ -233,7 +233,7 @@ nav > .container ul li a:hover {
 
 /* ====== about_us part start ======= */
 #about_us {
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 #about_us > .container {
   background-color: rgb(34, 34, 34);
@@ -244,6 +244,16 @@ nav > .container ul li a:hover {
   align-items: center;
   border-radius: 18px;
   overflow: hidden;
+  animation: aboutAnimation 2s linear  infinite alternate;
+ }
+@keyframes aboutAnimation {
+  from{
+    box-shadow: none;
+  }
+  to{
+         box-shadow: rgb(20 20 22 / 74%) 0px 0px 0px 3px, rgb(55 56 57 / 47%) 0px 0px 0px 6px, rgb(8 8 9 / 84%) 0px 0px 0px 9px, rgb(208 214 222 / 34%) 0px 0px 0px 12px, rgb(230 83 60 / 50%) 0px 0px 0px 15px;
+
+  }
 }
 #about_us > .container .img_div {
   position: relative;
